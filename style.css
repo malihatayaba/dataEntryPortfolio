@@ -103,7 +103,7 @@ a {
   padding: 50px 0px 0px 0px;
 }
 
-.btn {
+.btnwhite {
   padding: 13px 50px 13px 50px;
   border-radius: 10px;
   font-size: 22px;
@@ -112,8 +112,24 @@ a {
   background-color: white;
   border: 1px solid black;
 }
+.btnblack{
+  padding: 13px 50px 13px 50px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
 
-.btn:hover {
+.btnblack:hover {
+  color: #ff4500;
+  background-color: white;
+  border: 1px solid #ff4500;
+  font-size: 25px;
+  font-weight: 600;
+}
+.btnwhite:hover {
   color: #ff4500;
   background-color: #000;
   border: 1px solid #ff4500;
@@ -135,7 +151,6 @@ a {
 .about-title-container {
   display: flex;
   justify-content: space-around;
-  grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
 
@@ -167,4 +182,84 @@ a {
 .about-content {
   max-width: 600px;
   font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+    
+}
+
+.skill-container{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0px 100px 0px;
+}
+
+.skill-title-container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+ 
+}
+
+.skill-title{
+  font-size: 50px;
+  padding: 90px 0px 0px 50px;
+  animation: flicker 2s infinite;
+}
+
+.skil-icon{
+  animation: flicker 2s infinite;
+  font-size: 60px;
+  text-align: center;
+  padding: 100px 30px 0px 0px;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: normal;
+
+  }
+
+.skill-content img{
+  max-width: 200px;
+}
+
+.prof-container{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0px 100px 0px;
+}
+
+.prof-title-container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.prof-title{
+  font-size: 35px;
+  max-width: 350px;
+  padding: 90px 0px 0px 50px;
+  animation: flicker 2s infinite;
+}
+
+.prof-content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.prof-content p{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contact-container{
+  padding: 50px 0px 50px 0px;
+  background-color:  rgba(0, 0, 0, 0.912) ;
+  color: white;
 }
